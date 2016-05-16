@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS `food`;
+CREATE TABLE `food` (
+  `food_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT  COMMENT 'Food Id',
+  `foodName` varchar(100) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Food Name',
+  `description` text COLLATE utf8_unicode_ci NOT NULL COMMENT 'Descripntion',
+  `price` int(11) NOT NULL COMMENT 'Food Price',
+  `image` blob NOT NULL COMMENT 'Food Image',
+  `cat_id` int(11) NOT NULL COMMENT 'Category Id',
+PRIMARY KEY (`food_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
